@@ -1,0 +1,42 @@
+html{
+  background-color: #252525;
+  color:whitesmoke;
+}
+nav{
+  background-color: #303030;
+}
+nav p{
+  margin: .4em 0 .4em;
+}
+nav div{
+  display: flex;
+  flex-direction: row-reverse;
+}
+nav a{
+  text-decoration: none;
+  text-decoration-line: none;
+  color:white;
+  margin-left: 1em;
+}
+.home-img{
+  margin: 10em auto;
+  width: 70%;
+  transform: rotate(3deg);
+  position: relative;
+}
+.home-img img{
+  border-radius: 1em;
+  
+}
+.home-img::before{
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 30px;
+  bottom: 25px;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(200deg, transparent,#6EA4E0,#B6DC4C);
+  border-radius: 1em;
+  transform: rotate(2deg);
+}
