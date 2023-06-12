@@ -1,14 +1,16 @@
-html{
-  background-color: #252525;
-  color:whitesmoke;
+:root{
+  height: 100%;
+  background-color: #dde7ee;
+  color:black;
+  overflow-y: scroll;
 }
 nav{
-  background-color: #303030;
+  background-color: #323456;
 }
 nav p{
   margin: .4em 0 .4em;
 }
-nav div{
+nav div.ion-text-center{
   display: flex;
   flex-direction: row-reverse;
 }
@@ -18,18 +20,21 @@ nav a{
   color:white;
   margin-left: 1em;
 }
+.home{
+  height: calc(100vh - 1.8em);
+}
 .home-img{
-  margin: 10em auto;
+  margin:-5em auto auto;
   width: 70%;
   transform: rotate(3deg);
   position: relative;
+  z-index: -1;
 }
 .home-img img{
   border-radius: 1em;
-  
 }
 .home-img::before{
-  z-index: -1;
+  z-index: -2;
   content: "";
   position: absolute;
   left: 30px;
@@ -39,4 +44,8 @@ nav a{
   background-image: linear-gradient(200deg, transparent,#6EA4E0,#B6DC4C);
   border-radius: 1em;
   transform: rotate(2deg);
+}
+
+.home h1{
+  font-size: 50px;
 }

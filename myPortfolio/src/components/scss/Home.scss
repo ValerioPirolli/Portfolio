@@ -1,0 +1,35 @@
+.home{
+    height: calc(100svh - 2.5em);
+    padding: 3% 5%;
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: linear-gradient(#323456, #396b89);
+    color: black;
+        h3{
+            font-size: 48px; 
+            z-index: 2;
+            position: relative;
+        }
+    &-img{
+        position: relative;
+        margin: auto;
+        margin-top: -3em;
+        width: 80%;
+        transform: rotate(3deg);
+        img{
+            width: 100%;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 30px;
+            bottom: 25px;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(200deg, transparent,#6EA4E0,#B6DC4C);
+            border-radius: 1em;
+            transform: rotate(2deg);
+          }
+    }
+  }

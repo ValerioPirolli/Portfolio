@@ -7,7 +7,7 @@ const Home = () => {
         and digital design.
       </h1>
       <div className="home-img">
-        <img src={imageName} alt="" />
+        <img src={imageName} alt=""/>
       </div>
     </div>
   );
