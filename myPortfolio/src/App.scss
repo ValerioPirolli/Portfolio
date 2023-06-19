@@ -1,14 +1,20 @@
-:root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-    font-size: 1.1em;
-    color-scheme: light dark;
-    color: white;
-    background-color: #dde7ee;
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-  }
+main{
+  padding: 2% 5%;
+  .text{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    max-width: 22em;
+    color: #4c4c4c;
+    font-size: 15px;
+    padding-bottom: 1.5em;
+}
+.subtitle{
+  color: #4c4c4c;
+  margin-bottom: 0.5em;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+}

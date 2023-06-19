@@ -1,14 +1,27 @@
+@font-face {
+  font-family: 'PPMori';
+  src: url('../public/Fonts/PPMori-Regular.otf') format('truetype');
+}
+@font-face {
+  font-family: 'PPMori';
+  src: url('../public/Fonts/PPMori-SemiBold.otf') format('truetype');
+  font-weight: 600;
+}
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+  
+  --white: #FFFFFF;
+  --greyLight-1: #E4EBF5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf;
+  font-family: 'PPMori', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  font-size: 1.1em;
-  color-scheme: light dark;
-  color: white;
-  background-color: #dde7ee;
+  background: var(--greyLight-1);
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
 }

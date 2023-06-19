@@ -1,0 +1,46 @@
+@import './../../index.scss';
+.project{
+    img{
+        margin: 0 auto -20%;
+        width: calc(90% - 30vw);
+        border-radius: 1.8em;
+        object-fit: cover;
+        display: block;
+    }
+    div{
+        border-radius: 1.8em;
+        box-shadow:.8em .8em 1.4em var(--greyLight-2), 
+                  -.2em -.2em 1.8em var(--greyLight-2);
+        align-items: center;
+        background-color: white;
+        padding: 22% 5% 2%;
+        h3{
+            text-align: center;
+        }
+    }
+    @media screen and (min-width:787px) {
+        font-size: 1.6em;
+        padding: 3.5% 0;
+        display: flex;
+        box-shadow:.8em .8em 1.4em var(--greyLight-2), 
+                  -.2em -.2em 1.8em var(--greyLight-2);
+        background-color: white;
+        margin-left: 15%;
+        width: auto;
+        border-radius: 1.8em;
+        img{
+            max-width: calc(50% - 3vw);
+            margin: 0;
+            padding: 0;
+            margin-left: -15%;
+            min-width: calc(50% - 3vw);
+        }
+        div{
+            box-shadow: none;
+            background-color: none;
+            margin: 0;
+            padding: 0 5%;
+        }
+        
+    }
+}

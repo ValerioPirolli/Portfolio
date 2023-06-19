@@ -1,9 +1,12 @@
 .about{
-    background-image: linear-gradient(#396b89,#81a5ba);
-    h4{
-        font-size: 40px;
+    &_header{
+        font-size: 2.8em;
+        line-height: 1.1;
+        letter-spacing: -.02em;
+        margin-bottom: .5em;
+        color: #111414;
     }
     p{
-        font-size: 2em;
+        border-bottom: 1px solid #cbcbcb;
     }
 }

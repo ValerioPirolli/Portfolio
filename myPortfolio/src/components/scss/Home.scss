@@ -1,14 +1,20 @@
 .home{
     height: calc(100svh - 2.5em);
-    padding: 3% 5%;
     display: flex;
     flex-direction: column-reverse;
-    background-image: linear-gradient(#323456, #396b89);
-    color: black;
-        h3{
+    color: #111414;
+        h2{
             font-size: 48px; 
             z-index: 2;
-            position: relative;
+            font-weight: 400;
+            .C{
+                background-image:url(./../../assets/clipart1793304.png);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                enable-background: accumulate;
+                
+            }
         }
     &-img{
         position: relative;
