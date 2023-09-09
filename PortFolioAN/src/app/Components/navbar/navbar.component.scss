@@ -1,0 +1,25 @@
+nav{
+  background-color: rgb(3,6 , 30);
+  transition: all 0.2s ease;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+  height: auto;
+  padding: auto;
+  padding: 1%;
+  color: white;
+  .navigation{
+   flex-direction: row-reverse;
+     a{
+       color: white;
+       text-decoration: none;
+      }
+  }
+  }
+.nav2{
+  margin: 0 3% 3% 3%;
+  border-radius: .8em;
+  top: 1%;
+  box-shadow: 0px 0px 8px black;
+}

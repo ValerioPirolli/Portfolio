@@ -7,7 +7,8 @@ const Home = () => {
         <img src={imageName} alt="" />
       </div>
         <h2>
-          Hi there, I'm <span className="V">Valerio</span>. A junior Web Developer passionate about <span className="C">coding</span> and digital design.
+          Hi there, I'm <span className="V">Valerio</span>.<br />
+           A junior <span className="W">Web Developer</span> passionate about <span className="C">coding</span> and digital design.
         </h2>
     </div>
   );

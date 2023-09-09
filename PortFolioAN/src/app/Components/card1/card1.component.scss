@@ -1,0 +1,48 @@
+.card-cont{
+  background-color: green;
+  border-radius: 0.8em;
+  overflow: hidden;
+  img{
+    width: 100%;
+  }
+  .card-body{
+    padding: 5%;
+    h2{
+      margin-top: 1em;
+      text-align: center;
+
+    }
+  }
+}
+.slider-buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-top: 8px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  position: relative;
+  margin-left: 4px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    width: 0;
+    left: 0;
+    //top: 50%;
+    //transform: translatey(-50%);
+    bottom: -1px;
+    transition: .2s;
+  }
+
+  &:hover:before { width: 100%; }
+}

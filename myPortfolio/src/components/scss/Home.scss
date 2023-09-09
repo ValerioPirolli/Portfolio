@@ -6,14 +6,19 @@
         h2{
             font-size: 48px; 
             z-index: 2;
-            font-weight: 400;
+            font-weight: 600;
+            line-height: 1.6;
             .C{
                 background-image:url(./../../assets/clipart1793304.png);
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
                 enable-background: accumulate;
-                
+            }
+            .W{
+                border: 3px solid pink;
+                border-radius: 99em;
+                padding: 0 4px 4px;
             }
         }
     &-img{
@@ -37,5 +42,24 @@
             border-radius: 1em;
             transform: rotate(2deg);
           }
+    }
+    @media screen and (min-width:787px) {
+        height: 70vh;
+        flex-direction: row-reverse;
+        h2{
+            margin: auto;
+            font-size: 55px; 
+            z-index: 2;
+            font-weight: 400;
+            padding-right: -30px;
+        }
+        &-img{
+            margin: auto;
+            margin-left: -10%;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
     }
   }
