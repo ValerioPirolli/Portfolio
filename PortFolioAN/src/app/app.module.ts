@@ -7,6 +7,7 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { HomeComponent } from './Components/home/home.component';
 import { AboutComponent } from './Components/about/about.component';
 import { Card1Component } from './Components/card1/card1.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -14,10 +15,12 @@ import { Card1Component } from './Components/card1/card1.component';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    Card1Component
+    Card1Component,
+
   ],
   imports: [
     BrowserModule,
+    CarouselModule,
     AppRoutingModule
   ],
   providers: [],
