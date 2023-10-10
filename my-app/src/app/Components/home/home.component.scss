@@ -2,12 +2,10 @@
 
 #home {
   font-family: "Montserrat", sans-serif;
-  background-color: whitesmoke;
+  color: white;
   padding: 2% 5%;
-  color: black;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px -50px 36px -28px inset;
-  border-bottom: 2px solid #4c4c4c;
-
+  background: url("https://s3-us-west-2.amazonaws.com/files.bradengelhardt.com/brad-bg-main.jpg") no-repeat;
+  background-size: cover;
   h2 {
     font-size: 32px;
     z-index: 2;
@@ -20,9 +18,13 @@
   position: relative;
   margin: 2.5em auto 2.5em;
   width: 80%;
-  transform: rotate(3deg);
-
+  //transform: rotate(3deg);
   img {
+    clip-path: circle();
+    width: 100%;
+    filter: grayscale(50%);
+  }
+  /*img {
     animation-duration: 4s;
     animation-name: float;
     animation-iteration-count: infinite;
@@ -49,13 +51,12 @@
     animation-play-state: running;
     border-radius: 1em;
     transform: rotate(2deg);
-  }
+  }*/
 }
-
 .arrow-wrap {
   .pulse {
     margin: auto;
-    margin-bottom: -2.5em;
+    margin-bottom: -1.5em;
     display: block;
     width: 4em;
     height: 4em;

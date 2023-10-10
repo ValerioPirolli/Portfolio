@@ -11,6 +11,8 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   scrolled = false;
+  black = false;
+  visible = false;
 
   /*checkpoint = 300;
   currentScroll = window.pageYOffset;
@@ -19,23 +21,8 @@ export class NavbarComponent implements OnInit {
   }
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
-    this.scrolled = window.pageYOffset > 180;
+    this.visible = window.pageYOffset > 200;
+    this.scrolled = window.pageYOffset > 311;
+    this.black = window.pageYOffset > 1804;
   }
-
- /* @HostListener('window:scroll', ['$event'])
-  onWindowScroll() {
-
-
-    if (this.currentScroll <= this.checkpoint) {
-      this.opacity = 1 - this.currentScroll / this.checkpoint;
-    } else {
-      this.opacity = 0;
-    }
-
-    // Effettua un cast esplicito a HTMLElement
-    const element = document.querySelector(".front") as HTMLElement;
-    if (element) {
-      element.style.opacity = this.opacity.toString();
-    }
-  }*/
 }

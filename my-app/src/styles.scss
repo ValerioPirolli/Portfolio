@@ -50,8 +50,11 @@
   -webkit-text-size-adjust: 100%;
 
 }
+body{
+  background-color: #080808;
+}
 
-/*.owl-nav{
+.owl-nav{
   text-align: end!important;
   margin-right: 1em;
 }
@@ -59,7 +62,7 @@
 .owl-prev, .owl-next {
   background-color: transparent !important;
   font-size: 23px!important;
-  color: black!important;
+  color: white!important;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
 }
@@ -72,7 +75,7 @@
 
 .owl-dot{
   margin-left: .7em;
-}*/
+}
 .cont{
   max-width: 960px;
   margin: auto;

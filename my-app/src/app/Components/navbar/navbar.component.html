@@ -1,4 +1,4 @@
-<nav class="d-flex front" [ngClass]="{'visible': scrolled}">
+<nav *ngIf="visible" class="d-flex front" [ngClass]="{'visible': scrolled, 'projects': black}">
   <div class="col-2 menu__link val">
     <a href="#home">Valerio</a>
   </div>

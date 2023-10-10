@@ -1,31 +1,39 @@
-<div class="cont">
-
-  <div class="card-cont">
-        <div class="img sp"></div>
-        <div class="card-body">
-          <h2 class="title">Spotify</h2>
-          <p class="text">Io e il mio team durante il corso di Epicode abbiamo ricreato l'app di spotify come sito web</p>
+<div class="card1">
+  <div class="spacing"id="project"></div>
+  <div class="cont">
+  <div class="header">Projects</div>
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide class="custom-slide">
+      <div class="card-cont">
+        <h2 class="card-title">Spotify</h2>
+          <div class="img sp"></div>
+          <div class="card-body">
+            <p class="card-text text">Io e il mio team durante il corso di Epicode abbiamo ricreato l'app di spotify come sito web</p>
+          </div>
+          <div class="card-body">
+            <h2 class="title">Sviluppo</h2>
+            <p class="card-text text">In una settima abbiamo ricreato l'applicazione di Spotify in web app, il nostro team era composto da io che facevo la parte grafica e animata del progetto mentre gli altri compagni del team si sono concentrati sullo Sviluppo della parte di script, il risultato finito è stato ottimo.</p>
+          </div>
         </div>
-        <div class="card-body">
-          <h2 class="title">Sviluppo</h2>
-          <hr>
-          <p class="text">In una settima abbiamo ricreato l'applicazione di Spotify in web app, il nostro team era composto da io che facevo la parte grafica e animata del progetto mentre gli altri compagni del team si sono concentrati sullo Sviluppo della parte di script, il risultato finito è stato ottimo.</p>
-        </div>
-  </div>
-  <!-- CineCritic ---------------------------------------------------->
-  <div class="card-cont">
-      <div class="img cc"></div>
+    </ng-template>
+    <ng-template carouselSlide class="custom-slide">
+      <div class="card-cont">
+        <h2 class="card-title">CineCritic</h2>
+        <div class="img cc"></div>
       <div class="card-body">
-        <h2 class="title">CineCritic</h2>
-        <p class="text">Questo è il progetto per la conclusione del mio percorso con epicode</p>
+        <p class="card-text text">Questo è il progetto per la conclusione del mio percorso con epicode</p>
       </div>
 
       <div class="card-body">
         <h2 class="title">Sviluppo</h2>
-        <hr>
-        <p class="text">In una settima abbiamo ricreato l'applicazione di Spotify in web app, il nostro team era composto da io che facevo la parte grafica e animata del progetto mentre gli altri compagni del team si sono concentrati sullo Sviluppo della parte di script, il risultato finito è stato ottimo.</p>
+        <p class="card-text text">In una settima abbiamo ricreato l'applicazione di Spotify in web app, il nostro team era composto da io che facevo la parte grafica e animata del progetto mentre gli altri compagni del team si sono concentrati sullo Sviluppo della parte di script, il risultato finito è stato ottimo.</p>
       </div>
-</div>
+    </div>
+    </ng-template>
+  </owl-carousel-o>
+      <!-- CineCritic ---------------------------------------------------->
 
 
+  </div>
+  <div class="spacing"></div>
 </div>

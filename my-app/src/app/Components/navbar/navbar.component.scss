@@ -1,21 +1,19 @@
 nav{
   opacity: 0;
-  background-color: #222;
-  transition: all 0.5s ease;
-  margin-top: -50px;
+  transition: all 0.5s linear;
+  margin-top: calc(-1.2rem + -1%);
   position: sticky;
   top: 0;
   z-index: 100;
   height: auto;
   padding: auto;
   padding: 1%;
-  color: white;
-  border-bottom: 1px solid rgb(55, 55, 55);
+  background-color: whitesmoke;
   .navigation{
     flex-direction: row;
     justify-content: space-around;
     a{
-      color: whitesmoke;
+      color: black;
       text-decoration: none;
     }
   }
@@ -23,7 +21,6 @@ nav{
     font-size: 1.2rem;
     transition: 0.5s;
     opacity: 0.75;
-    line-height: 2em;
   }
   .val{
     a{
@@ -37,6 +34,11 @@ nav{
 .visible{
   opacity: 1;
 }
-.novisible{
-  opacity: 1;
+.projects{
+  background-color: #181818;
+  .navigation{
+    a{
+      color: whitesmoke;
+    }
+  }
 }

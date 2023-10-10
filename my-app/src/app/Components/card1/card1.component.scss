@@ -1,7 +1,14 @@
+.card1{
+  -webkit-clip-path: polygon(18% 0, 100% 2%, 100% 97%, 82% 100%, 0 97%, 0 2%);
+clip-path: polygon(18% 0, 100% 2%, 100% 97%, 82% 100%, 0 97%, 0 2%);
+background-color: #181818;
+margin-top: 50px;
+}
 .cont{
   padding: 2% 10%;
+
 }
-.card-cont{
+/*.card-cont{
   margin-bottom: 2em;
   background-color: whitesmoke;
   border-radius: 0.8em;
@@ -35,6 +42,43 @@
     }
   }
 }
+*/
+.header{
+  font-size: 2.8em;
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  margin-bottom: .5em;
+  color: #fff;
+}
+.card-cont{
+  color: #fff;
+  margin-top: 3em;
+  .card-title{
+    text-transform: uppercase;
+    font-size: clamp(2em, 8vw, 7em);
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .card-text{
+    font-size: 1.3em;
+    color: rgb(179, 179, 179);
+  }
+  .img{
+    margin: auto;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    width: clamp(180px, 40vw, 380px);
+    height: clamp(180px, 40vw, 380px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .sp{
+    background-image: url(../../../assets/SpotifyHP.jpg);
+  }
+  .cc{
+    background-image: url(../../../assets/cinecritic.png);
+  }
+}
 .slider-buttons {
   display: flex;
   justify-content: flex-end;
@@ -66,4 +110,7 @@
   }
 
   &:hover:before { width: 100%; }
+}
+.spacing{
+  height: 50px;
 }
