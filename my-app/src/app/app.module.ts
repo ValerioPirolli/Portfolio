@@ -9,6 +9,7 @@ import { AboutComponent } from './Components/about/about.component';
 import { Card1Component } from './Components/card1/card1.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { ScrollDirective } from './scroll.directive';
+import { SkillsComponent } from './Components/skills/skills.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { ScrollDirective } from './scroll.directive';
     Card1Component,
     FooterComponent,
     ScrollDirective,
+    SkillsComponent,
   ],
   imports: [
     BrowserModule,

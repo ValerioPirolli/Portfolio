@@ -1,39 +1,70 @@
 <div class="card1">
-  <div class="spacing"id="project"></div>
+  <div class="spacing" id="project"></div>
   <div class="cont">
-  <div class="header">Projects</div>
-  <owl-carousel-o [options]="customOptions">
-    <ng-template carouselSlide class="custom-slide">
-      <div class="card-cont">
-        <h2 class="card-title">Spotify</h2>
+    <div class="header">Projects</div>
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide class="custom-slide">
+        <div class="card-cont">
+          <h2 class="card-title">Spotify</h2>
           <div class="img sp"></div>
           <div class="card-body">
-            <p class="card-text text">Io e il mio team durante il corso di Epicode abbiamo ricreato l'app di spotify come sito web</p>
+            <p class="card-text text">
+              Io e il mio team durante il corso di Epicode abbiamo ricreato
+              l'app di spotify come sito web
+            </p>
           </div>
           <div class="card-body">
             <h2 class="title">Sviluppo</h2>
-            <p class="card-text text">In una settima abbiamo ricreato l'applicazione di Spotify in web app, il nostro team era composto da io che facevo la parte grafica e animata del progetto mentre gli altri compagni del team si sono concentrati sullo Sviluppo della parte di script, il risultato finito è stato ottimo.</p>
+            <p class="card-text text">
+              In una settima abbiamo ricreato l'applicazione di Spotify in web
+              app, il nostro team era composto da io che facevo la parte grafica
+              e animata del progetto mentre gli altri compagni del team si sono
+              concentrati sullo Sviluppo della parte di script, il risultato
+              finito è stato ottimo.
+            </p>
           </div>
         </div>
-    </ng-template>
-    <ng-template carouselSlide class="custom-slide">
-      <div class="card-cont">
-        <h2 class="card-title">CineCritic</h2>
-        <div class="img cc"></div>
-      <div class="card-body">
-        <p class="card-text text">Questo è il progetto per la conclusione del mio percorso con epicode</p>
-      </div>
+      </ng-template>
+      <ng-template carouselSlide class="custom-slide">
+        <div class="card-cont">
+          <h2 class="card-title">CineCritic</h2>
+          <div class="img cc"></div>
+          <div class="card-body">
+            <p class="card-text text">
+              Questo è il progetto per la conclusione del mio percorso con
+              epicode
+            </p>
+          </div>
 
-      <div class="card-body">
-        <h2 class="title">Sviluppo</h2>
-        <p class="card-text text">In una settima abbiamo ricreato l'applicazione di Spotify in web app, il nostro team era composto da io che facevo la parte grafica e animata del progetto mentre gli altri compagni del team si sono concentrati sullo Sviluppo della parte di script, il risultato finito è stato ottimo.</p>
-      </div>
-    </div>
-    </ng-template>
-  </owl-carousel-o>
-      <!-- CineCritic ---------------------------------------------------->
+          <div class="card-body">
+            <h2 class="title">Sviluppo</h2>
+            <p class="card-text text">
+              In una settima abbiamo ricreato l'applicazione di Spotify in web
+              app, il nostro team era composto da io che facevo la parte grafica
+              e animata del progetto mentre gli altri compagni del team si sono
+              concentrati sullo Sviluppo della parte di script, il risultato
+              finito è stato ottimo.
+            </p>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+    <!-- CineCritic ---------------------------------------------------->
 
+    <article class="movie-card" [ngClass]="{ 'movie-card-hover': classecc }" (click)="togglecc()">
+      <img src="../../../assets/cinecritic.png" alt="Avatar wallpaper" />
+
+      <div class="content">
+        <h1>CineCritic</h1>
+        <div class="synopsis">
+          Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus quaerat eveniet natus maiores vero accusantium ducimus aliquam ullam corrupti provident odit ipsam distinctio animi porro eius fuga, quisquam voluptate optio.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolores libero labore minima veniam in quaerat ipsam culpa quasi voluptatibus officia doloremque fugiat suscipit quo facilis beatae, consequatur dicta unde.
+        </div>
+      </div>
+    </article>
 
   </div>
   <div class="spacing"></div>
 </div>
+

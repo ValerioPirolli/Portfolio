@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -7,6 +7,8 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./card1.component.scss']
 })
 export class Card1Component {
+  classesp = false;
+  classecc = false;
   customOptions: OwlOptions = {
     loop: false,
     mouseDrag: true,
@@ -18,5 +20,10 @@ export class Card1Component {
     items: 1,
     nav: true,
   }
-
+  togglecc() {
+    this.classecc = !this.classecc;
+  }
+  togglesp() {
+    this.classesp = !this.classesp;
+  }
 }

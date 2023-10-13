@@ -2,8 +2,47 @@
   height: 50px;
 }
 
-div{
-  -webkit-clip-path: polygon(18% 0, 100% 16%, 100% 100%, 0 100%, 0 16%);
-  clip-path: polygon(18% 0, 100% 16%, 100% 100%, 0 100%, 0 16%);
-background-color: whitesmoke;
+.header{
+  font-size: 2.8em;
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  margin: 1em auto .5em;
+  color: whitesmoke;;
+  text-align: center;
 }
+
+.contact{
+  background:#2B3044 url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/envelope.svg?sanitize=true) no-repeat right;
+  padding: 5% 0 10%;
+  svg{
+    height: 50px;
+  }
+  .download{
+    text-align: center;
+    margin: 2em auto 2em;
+    background-color: #2B3044;
+    width: fit-content;
+    padding: 10px 22px 10px 16px;
+    border-radius: 9px;
+    cursor: pointer;
+    color: white;
+      svg{
+        height: 1.5em;
+        padding: auto;
+        margin-left: .4em;
+        .bi-linkedin{
+          fill: blue;
+        }
+      }
+    }
+    &-link{
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: space-around;
+      color: whitesmoke;
+    }
+  }
+
+

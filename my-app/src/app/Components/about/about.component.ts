@@ -11,11 +11,11 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
   }
-  @HostListener('window:scroll', ['$event'])
+  /*@HostListener('window:scroll', ['$event'])
   nWindowScroll() {
   const myComponent = this.elementRef.nativeElement.querySelector('#about');
   this.altezzaDiv = myComponent.offsetTop;
   console.log(this.altezzaDiv)
-}
+}*/
 
 }

@@ -1,12 +1,21 @@
 .card1{
   -webkit-clip-path: polygon(18% 0, 100% 2%, 100% 97%, 82% 100%, 0 97%, 0 2%);
 clip-path: polygon(18% 0, 100% 2%, 100% 97%, 82% 100%, 0 97%, 0 2%);
-background-color: #181818;
+background-color: whitesmoke;
 margin-top: 50px;
 }
 .cont{
   padding: 2% 10%;
 
+}
+*{
+  transition: ease-in-out .7s;
+  .content{
+    transition-delay: 0.5s;
+    .synopsis{
+      transition-delay: 0.6s;
+    }
+  }
 }
 /*.card-cont{
   margin-bottom: 2em;
@@ -47,11 +56,12 @@ margin-top: 50px;
   font-size: 2.8em;
   line-height: 1.1;
   letter-spacing: -.02em;
-  margin-bottom: .5em;
-  color: #fff;
+  margin: 1em auto .5em;
+
+  color: black;
 }
 .card-cont{
-  color: #fff;
+  color: black;
   margin-top: 3em;
   .card-title{
     text-transform: uppercase;
@@ -114,3 +124,91 @@ margin-top: 50px;
 .spacing{
   height: 50px;
 }
+/* Global CSS and Sass mixins defined in codepen.io/jsulpis/pen/ExdxLgM */
+
+.movie-card {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  color: white;
+  position: relative;
+  border-radius: 0.6em;
+  overflow: hidden;
+  font-size: 140%;
+  max-width: 90vw;
+  aspect-ratio: 16/9;
+  transition-duration: 1s;
+  transition-delay: .2s;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at 80% -150%,
+      transparent 60%,
+      rgba(0, 0, 0, 0.5)
+    );
+    mix-blend-mode: overlay;
+  }
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content {
+  max-width: 90vw;
+  aspect-ratio: 16/9;
+  z-index: 1;
+  position: absolute;
+  top: calc(100% - 4em);
+  left: min(3em, 8vmin);
+  right: min(3em, 8vmin);
+  text-align: left;
+
+  > * {
+    position: relative;
+    will-change: transform;
+  }
+}
+
+h1 {
+  font-size: 2em;
+  color: inherit;
+  margin: 0;
+}
+
+
+.synopsis {
+  text-shadow: 0 0 3px black;
+  opacity: 0;
+  font-size: 0.8em;
+  line-height: 1.4;
+  margin-block: 0.75em;
+}
+
+
+.movie-card-hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transform: scale(1.03);
+  .content{
+    top: min(3em, 8vmin);
+  }
+
+  .synopsis{
+    overflow-y: scroll;
+    height: 70%;
+    opacity: 1;
+    &::-webkit-scrollbar {
+      display: none;
+  }
+  }
+  img {
+    transition-delay: 0s;
+    -webkit-filter: blur(14px);
+    filter: blur(14px);
+    transform: scale(1.03);
+  }
+}
+
