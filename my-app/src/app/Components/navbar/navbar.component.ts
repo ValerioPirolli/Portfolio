@@ -23,6 +23,5 @@ export class NavbarComponent implements OnInit {
   onWindowScroll() {
     this.visible = window.pageYOffset > 200;
     this.scrolled = window.pageYOffset > 311;
-    this.black = window.pageYOffset > 1804;
   }
 }

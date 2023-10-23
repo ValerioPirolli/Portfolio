@@ -13,7 +13,17 @@
     line-height: 1.6;
   }
 }
-
+#typewriter-text{
+  font-size: 30px;
+  display: block;
+  height: 5em;
+  @media only screen and (min-width: 576px) {
+    display: flex;
+    font-size: 35px;
+    width: 70%;
+    align-self: center;
+}
+}
 .home-img {
   position: relative;
   margin: 2.5em auto 2.5em;
@@ -144,7 +154,7 @@
       justify-content: space-around;
     }
     .home-img {
-      width: 50%;
+      max-width: 30%;
     }
   h2{
     max-width: 75%;
